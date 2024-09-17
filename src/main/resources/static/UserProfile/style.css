@@ -1,0 +1,122 @@
+.background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url(
+    "../images/profile-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(10px) brightness(25%) grayscale(100%);
+    z-index: -1;
+}
+
+
+.table {
+    position: absolute;
+    top: 15%;
+    width: 90%;
+    color: white;
+    margin: .8rem auto;
+    border-collapse: collapse;
+    overflow: auto;
+}
+
+.table th {
+    color: #7afffe;
+}
+
+table th, td {
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+thead th {
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgba(169, 169, 169, 0.05) !important;
+}
+
+tbody tr {
+    --delay: .1s;
+    transition: .5s ease-in-out var(--delay), background-color 0s;
+}
+
+tbody tr:hover {
+    background-color: rgba(0, 255, 254, 0.1) !important;
+}
+
+thead th span.icon-arrow {
+    display: inline-block;
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    text-align: center;
+    font-size: 1.2rem;
+    transition: .2s ease-in-out;
+}
+
+thead th:hover span.icon-arrow{
+    border: 2px solid rgb(122, 255, 254);
+}
+
+thead th:hover {
+    color: rgb(122, 255, 254);
+}
+
+thead th.active span.icon-arrow{
+    background-color: rgb(193, 255, 254);
+    color: black;
+}
+
+thead th.asc span.icon-arrow{
+    transform: rotate(180deg);
+}
+
+thead th.active,tbody td.active {
+    color: rgb(193, 255, 254);
+}
+
+
+
+.pagination {
+    position: absolute;
+    bottom: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.pagination button {
+    width: 30px;
+    height: 30px;
+    /*padding: 5px 10px;*/
+    margin: 0 5px;
+    cursor: pointer;
+    outline: 1px solid #494a4f;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+
+.hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.pagination button.active {
+    background-color: #7afffe;
+    color: #000000;
+}

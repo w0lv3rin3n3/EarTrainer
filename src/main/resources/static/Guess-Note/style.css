@@ -1,0 +1,134 @@
+.background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url(
+    "../images/note-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(3px) invert() brightness(30%) grayscale(100%);
+    /*filter: ;*/
+    z-index: -1;
+}
+/*.questionNumber {*/
+/*    color: white;*/
+/*    font-size: 1.5rem;*/
+/*    position: absolute;*/
+/*    top: 15%;*/
+/*}*/
+/*.answer {*/
+/*    font-size: 1.5rem;*/
+/*    position: absolute;*/
+/*    top: 20%;*/
+/*}*/
+#functionality {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+
+.piano-container {
+    display: flex;
+    /*position: absolute;*/
+    /*transform: translate(-50%, -50%);*/
+    padding: 4em 1em 1em 1em;
+    border-radius: 0.62em;
+    background-color: #2d2d2d;
+    box-shadow: 0 10em 20em rgba(7, 0, 0, 0.25);
+}
+.white-key {
+    color: black;
+    text-align: center;
+    width: 4.37em;
+    height: 17.5em;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 0 0 0.3em 0.3em;
+    border: 2px solid #24272e;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.white-key:hover {
+    background-color: #8c8c8c;
+}
+.black-key {
+    color: white;
+    text-align: center;
+    width: 2.5em;
+    height: 10em;
+    border-radius: 0 0 0.3em 0.3em;
+    box-sizing: border-box;
+    position: absolute;
+    background-color: #070a0f;
+    cursor: pointer;
+}
+.black-key:hover {
+    background-color: #8c8c8c;
+}
+.black-key:nth-child(1) {
+    left: 4em;
+}
+.black-key:nth-child(2) {
+    left: 8.37em;
+}
+.black-key:nth-child(3) {
+    left: 17.12em;
+}
+.black-key:nth-child(4) {
+    left: 21.5em;
+}
+.black-key:nth-child(5) {
+    left: 25.87em;
+}
+.black-key:nth-child(6) {
+    left: 34.62em;
+}
+.black-key:nth-child(7) {
+    left: 39em;
+}
+.black-key:nth-child(8) {
+    left: 47.75em;
+}
+.black-key:nth-child(9) {
+    left: 52.12em;
+}
+.black-key:nth-child(10) {
+    left: 56.5em;
+}
+.black-key:nth-child(11) {
+    left: 65.25em;
+}
+.black-key:nth-child(12) {
+    left: 69.62em;
+}
+.black-key:nth-child(13) {
+    left: 78.37em;
+}
+.black-key:nth-child(14) {
+    left: 82.74em;
+}
+.black-key:nth-child(15) {
+    left: 87.12em;
+}
+
+h2, h4 {
+    position: relative;
+
+    text-align: center;
+    font-weight: 800;
+}
+h2 {
+    top: 85%;
+}
+h4 {
+    top: 65%;
+}
+.active {
+    background-color: rgb(187, 182, 0);
+}
+.active:hover {
+    background-color: rgb(255, 252, 128);
+    color: black;
+}

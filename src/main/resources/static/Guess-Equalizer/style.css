@@ -1,0 +1,46 @@
+.background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url(
+    "../images/eq-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(10px) brightness(50%);
+    z-index: -1;
+}
+
+#functionality {
+    position: absolute;
+    top: 30%;
+    /*scale: 2;*/
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    margin: 2em auto;
+    max-width: 100%;
+}
+.slider.vertical {
+    display: flex;
+    margin: auto;
+    -webkit-appearance: none;
+    width: 1200px;
+    height: 25px; /* Set the height to your desired length */
+    border-radius: 20px;
+    background: #ffffff;
+    outline: none;
+    opacity: 0.3;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+.slider.vertical::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #00a4a0;
+    cursor: pointer;
+}

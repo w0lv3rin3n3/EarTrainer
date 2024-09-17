@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Guess-Instruments</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../shared/shared.css" />
+    <link rel="stylesheet" href="../shared/registrationForm.css" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script noModule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+<div class="background"></div>
+<header>
+    <img class="logo prevent-select" src="../images/logo_transparent.png">
+    <div class="dropdown-list">
+        <select name="level" id="level">
+            <option value="1">Level 1</option>
+            <option value="2">Level 2</option>
+            <option value="3">Level 3</option>
+            <option value="4">Level 4</option>
+            <option value="5">Level 5</option>
+        </select>
+<!--        <select class="samples" id="samples" style="width: 15rem"></select>-->
+    </div>
+    <nav class="navigation">
+        <a href="../Home/index.html">Home</a>
+        <a href="../Guess-Equalizer/index.html">Equalizer</a>
+        <a href="../Guess-Gain/index.html">Gain</a>
+        <a href="index.html">Instruments</a>
+        <a href="../Guess-Note/index.html">Notes</a>
+        <a href="../Guess-Panning/index.html">Panning</a>
+        <button class="btnLogin-popup">Login</button>
+        <button onclick="window.location.href='../UserProfile/index.html'" class="btnUser hidden"><ion-icon name="person"></ion-icon></button>
+        <button class="btnLogout hidden">Logout</button>
+    </nav>
+</header>
+<div class="wrapper">
+    <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+    <div class="form-box login">
+        <h2>Login</h2>
+        <form id="login" action="#">
+            <div class="input-box">
+                <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                <input id="logInUserEmail" type="email" name="userEmail" required>
+                <label>Email</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                <input id="logInPassword" type="password" name="password" required>
+                <label>Password</label>
+            </div>
+            <div class="remember-forgot">
+                <label>
+                    <input type="checkbox">
+                    Remember Me
+                </label>
+                <a href="#">Forgot Password?</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div class="login-register">
+                <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+            </div>
+        </form>
+    </div>
+    <div class="form-box register">
+        <h2>Registration</h2>
+        <form id="signup" action="#">
+            <div class="input-box">
+                <span class="icon"><ion-icon name="person"></ion-icon></span>
+                <input id="signUpUserName" type="text" required>
+                <label>Username</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                <input id="signUpUserEmail" type="email" required>
+                <label>Email</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                <input id="signUpPassword" type="password" required>
+                <label>Password</label>
+            </div>
+            <div class="remember-forgot">
+                <label>
+                    <input type="checkbox">
+                    I agree to the terms & conditions
+                </label>
+            </div>
+            <button type="submit" class="btn">Register</button>
+            <div class="login-register">
+                <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="questionNumber"></div>
+<div class="answer"></div>
+<div class="instruments-wrapper">
+    <div class="instruments">
+        <div class="container" id="piano">
+            <input type="checkbox" id="piano-input" />
+            <label for="piano-input">
+                <img id="piano-image" src="../images/Instruments/piano.png" />
+            </label>
+        </div>
+        <div class="container" id="eg">
+            <input type="checkbox" id="eg-input" />
+            <label for="eg-input">
+                <img id="eg-image" src="../images/Instruments/eg.png" />
+            </label>
+        </div>
+        <div class="container" id="ag">
+            <input type="checkbox" id="ag-input" />
+            <label for="ag-input">
+                <img id="ag-image" src="../images/Instruments/ag.png" />
+            </label>
+        </div>
+        <div class="container" id="bass">
+            <input type="checkbox" id="bass-input" />
+            <label for="bass-input">
+                <img id="bass-image" src="../images/Instruments/bass.png" />
+            </label>
+        </div>
+    </div>
+    <div class="instruments">
+        <div class="container" id="drums">
+            <input type="checkbox" id="drums-input" />
+            <label for="drums-input">
+                <img id="drums-image" src="../images/Instruments/drums.png" />
+            </label>
+        </div>
+        <div class="container" id="violin">
+            <input type="checkbox" id="violin-input" />
+            <label for="violin-input">
+                <img id="violin-image" src="../images/Instruments/violin.png" />
+            </label>
+        </div>
+        <div class="container" id="saxophone">
+            <input type="checkbox" id="saxophone-input" />
+            <label for="saxophone-input">
+                <img id="saxophone-image" src="../images/Instruments/saxophone.png" />
+            </label>
+        </div>
+        <div class="container" id="vox">
+            <input type="checkbox" id="vox-input" />
+            <label for="vox-input">
+                <img id="vox-image" src="../images/Instruments/vox.png" />
+            </label>
+        </div>
+    </div>
+</div>
+<div class="controls prevent-select" id="controls">
+    <button id="playButton">Play</button>
+    <button id="checkButton">Check Answer</button>
+    <button id="nextQuestionButton">Next Question</button>
+</div>
+<!--<audio class="audio" src="http://localhost:8080/samples/8/data" crossorigin="anonymous" ></audio>-->
+<!--<audio class="audio2" src="http://localhost:8080/samples/8/data" crossorigin="anonymous" ></audio>-->
+<script type="module" src="../shared/registrationForm.js"></script>
+<script type="module" src="../shared/userProfile.js"></script>
+<!--<script type="module" src="multitracks.js"></script>-->
+<script type="module" src="script.js"></script>
+</body>
+</html>

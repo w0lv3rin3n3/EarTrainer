@@ -1,0 +1,60 @@
+.controls {
+    position: absolute;
+    top: 85%;
+}
+
+.background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url(
+    "../images/instrument-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(3px) brightness(30%) grayscale(100%);
+    z-index: -1;
+}
+
+.instruments-wrapper {
+    margin-top: 4rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.instruments {
+    width: 50%;
+    margin: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container {
+    height: 200px;
+    width: 200px;
+    background-color: #ffffff;
+    box-shadow: 0 0 25px rgba(17, 1, 68, 0.08);
+    border-radius: 8px;
+    position: relative;
+}
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+}
+.container img {
+    width: 90%;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+}

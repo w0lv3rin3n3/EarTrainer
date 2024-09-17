@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../shared/shared.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../shared/registrationForm.css" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script noModule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+<div class="background"></div>
+<header>
+    <img class="logo prevent-select" src="../images/logo_transparent.png">
+    <nav class="navigation prevent-select">
+        <a href="index.html">Home</a>
+        <a href="../Guess-Equalizer/index.html">Equalizer</a>
+        <a href="../Guess-Gain/index.html">Gain</a>
+        <a href="../Guess-Instruments/index.html">Instruments</a>
+        <a href="../Guess-Note/index.html">Notes</a>
+        <a href="../Guess-Panning/index.html">Panning</a>
+        <button class="btnLogin-popup">Login</button>
+<!--        <a href="../UserProfile/index.html"><button class="btnUser hidden"><ion-icon name="person"></ion-icon></button></a>-->
+        <button onclick="window.location.href='../UserProfile/index.html'" class="btnUser hidden"><ion-icon name="person"></ion-icon></button>
+        <button class="btnLogout hidden">Logout</button>
+    </nav>
+</header>
+<div class="wrapper">
+    <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+    <div class="form-box login">
+        <h2>Login</h2>
+        <form id="login" action="#">
+            <div class="input-box">
+                <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                <input id="logInUserEmail" type="email" name="userEmail" required>
+                <label>Email</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                <input id="logInPassword" type="password" name="password" required>
+                <label>Password</label>
+            </div>
+            <div class="remember-forgot">
+                <label>
+                    <input type="checkbox">
+                    Remember Me
+                </label>
+                <a href="#">Forgot Password?</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div class="login-register">
+                <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+            </div>
+        </form>
+    </div>
+    <div class="form-box register">
+        <h2>Registration</h2>
+        <form id="signup" action="#">
+            <div class="input-box">
+                <span class="icon"><ion-icon name="person"></ion-icon></span>
+                <input id="signUpUserName" type="text" required>
+                <label>Username</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                <input id="signUpUserEmail" type="email" required>
+                <label>Email</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                <input id="signUpPassword" type="password" required>
+                <label>Password</label>
+            </div>
+            <div class="remember-forgot">
+                <label>
+                    <input type="checkbox">
+                    I agree to the terms & conditions
+                </label>
+            </div>
+            <button type="submit" class="btn">Register</button>
+            <div class="login-register">
+                <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="gallery">
+    <div class="gallery-container">
+        <a href = "../Guess-Gain/index.html">
+            <img class="gallery-item gallery-item-1" src="../images/gainReduction.png" data-index="1">
+        </a>
+        <a href = "../Guess-Instruments/index.html">
+            <img class="gallery-item gallery-item-2" src="../images/guessInstruments.png" data-index="2">
+        </a>
+        <a href = "../Guess-Equalizer/index.html">
+            <img class="gallery-item gallery-item-3" src="../images/digitalEqualizer.png" data-index="3">
+        </a>
+
+        <a href = "../Guess-Panning/index.html">
+            <img class="gallery-item gallery-item-4" src="../images/guessPanning.png" data-index="4">
+        </a>
+        <a href = "../Guess-Note/index.html">
+            <img class="gallery-item gallery-item-5" src="../images/guessNote.png" data-index="5">
+        </a>
+    </div>
+    <div class="gallery-controls">
+
+    </div>
+</div>
+<script src="carousel.js"></script>
+<script type="module" src="../shared/registrationForm.js"></script>
+<script type="module" src="../shared/userProfile.js"></script>
+</body>
+</html>

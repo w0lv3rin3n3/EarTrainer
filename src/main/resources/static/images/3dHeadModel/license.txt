@@ -1,0 +1,11 @@
+Model Information:
+* title:	Enidmodelhead RE3D model
+* source:	https://sketchfab.com/3d-models/enidmodelhead-re3d-model-af925897173041dc848414fbcd7594b9
+* author:	resquar3d (https://sketchfab.com/resquar3d)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Enidmodelhead RE3D model" (https://sketchfab.com/3d-models/enidmodelhead-re3d-model-af925897173041dc848414fbcd7594b9) by resquar3d (https://sketchfab.com/resquar3d) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
